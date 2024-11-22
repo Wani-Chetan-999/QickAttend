@@ -47,7 +47,7 @@ class Train:
         # std_b1 = Button(bg_img,command=self.back,image=self.back_img,cursor="hand2")
         button = Button(bg_img, command=self.back,image=self.back_img,bd=0, cursor="hand2",highlightthickness=0, relief=FLAT)
         button.place(x=10,y=0,width=45,height=45)
-
+ 
         # Create buttons below the section 
         # ------------------------------------------------------------------------------------------------------------------- 
         # Training button 1
