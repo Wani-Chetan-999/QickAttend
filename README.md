@@ -58,17 +58,40 @@ The **Face Recognition-Based Attendance System** is a Python-based project desig
 
 Here are some screenshots of the system in action:
 
-- Login Screen (Centered)
+- **Login Screen**
 <div align="center">
-  <img src="images/login_screen.png" alt="Login Screen" width="500" />
+  <img src="Screenshots/login.png" alt="Login Screen" width="80%"  />
 </div>
 
-- Attendance Screen (Left Aligned)
-<img src="images/attendance_screen.png" alt="Attendance Screen" width="500" align="ceter"/>
+- **Registration Screen**
+<div align="center">
+  <img src="Screenshots/register.png" alt="Login Screen" width="80%"  />
+</div>
 
-- System in Action (Right Aligned)
-<img src="images/system_in_action.png" alt="System in Action" width="500" align="center"/>
----
+- **Main Window**
+<div align="center">
+  <img src="Screenshots/main.png" alt="Login Screen" width="80%"  />
+</div>
+
+- **Student Registartion Pannel**
+<div align="center">
+  <img src="Screenshots/StudentReg.png" alt="Login Screen" width="80%"  />
+</div>
+
+- **Data Train Module**
+<div align="center">
+  <img src="Screenshots/dataTrain.png" alt="Login Screen" width="80%"  />
+</div>
+
+- **Face Detect & MArk Attendance**
+<div align="center">
+  <img src="Screenshots/result.png" alt="Login Screen" width="80%"  />
+</div>
+
+- **Attedance Module**
+<div align="center">
+  <img src="Screenshots/.png" alt="Login Screen" width="80%"  />
+</div>
 
 ### 📝 Usage
 
