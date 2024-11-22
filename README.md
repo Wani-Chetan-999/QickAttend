@@ -35,21 +35,20 @@ The **Face Recognition-Based Attendance System** is a Python-based project desig
 2. Install the required libraries by running:
    ```bash
    pip install -r requirements.txt
+   
+---
 
-Steps to Run
-Clone the repository:
-bash
-Copy code
-git clone https://github.com/Wani-Chetan-999/FaceRecognitionAttendance.git
-Navigate to the project directory:
-bash
-Copy code
-cd FaceRecognitionAttendance
-Run the main Python script:
-bash
-Copy code
-python app.py
-Open the browser and go to:
-plaintext
-Copy code
-http://127.0.0.1:5000
+## Steps to Run
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Wani-Chetan-999/FaceRecognitionAttendance.git
+
+2. Navigate to the project directory:
+   ```bash
+   cd QuickAttend
+
+3. Run the main Python script:
+   ```bash
+   python login.py
+   
