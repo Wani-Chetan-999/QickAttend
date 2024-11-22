@@ -7,8 +7,15 @@ import mysql.connector
 class Register:
     def __init__(self,root):
         self.root=root
-        self.root.title("Register")
+        self.root.title("QuickAttend")
         self.root.geometry("1566x864+0+0")
+        
+        img = Image.open("Images_GUI/scan2.jpg")  # Load the .png icon
+        img = img.resize((200, 200), Image.LANCZOS)  # Resize to 128x128
+        icon = ImageTk.PhotoImage(img)
+
+        # Set the resized icon
+        self.root.iconphoto(False, icon)
 
         # ============ Variables =================
         self.var_fname=StringVar()

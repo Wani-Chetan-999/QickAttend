@@ -7,15 +7,24 @@ from student import Student
 from train import Train
 from face_recognition import Face_Recognition
 from attendance import Attendance
-from developer import Developer
+from timeTable import TimeTable
 import os
-from helpsupport import Helpsupport
+from helpFaq import HelpFaq
 
 class Face_Recognition_System:
     def __init__(self,root):
         self.root=root
         self.root.geometry("1566x864+0+0")
-        self.root.title("Face_Recogonition_System")
+        self.root.title("QuickAttend")
+        
+        # self.root.iconphoto("Images_GUI/icon.png")
+        
+        img = Image.open("Images_GUI/scan2.jpg")  # Load the .png icon
+        img = img.resize((200, 200), Image.LANCZOS)  # Resize to 128x128
+        icon = ImageTk.PhotoImage(img)
+
+        # Set the resized icon
+        self.root.iconphoto(False, icon)
 
 # This part is image labels setting start 
         # first header image  
@@ -81,10 +90,10 @@ class Face_Recognition_System:
         hlp_img_btn=hlp_img_btn.resize((180,180),Image.LANCZOS)
         self.hlp_img1=ImageTk.PhotoImage(hlp_img_btn)
 
-        hlp_b1 = Button(bg_img,command=self.helpSupport,image=self.hlp_img1,cursor="hand2",)
+        hlp_b1 = Button(bg_img,command=self.HelpFaq,image=self.hlp_img1,cursor="hand2",)
         hlp_b1.place(x=1010,y=100,width=180,height=180)
 
-        hlp_b1_1 = Button(bg_img,command=self.helpSupport,text="Help Support",cursor="hand2",font=("times new roman",15,"bold"),bg="white",fg="navyblue")
+        hlp_b1_1 = Button(bg_img,command=self.HelpFaq,text="Help Support",cursor="hand2",font=("times new roman",15,"bold"),bg="white",fg="navyblue")
         hlp_b1_1.place(x=1010,y=280,width=180,height=45)
 
         # Top 4 buttons end.......
@@ -112,7 +121,7 @@ class Face_Recognition_System:
         pho_b1_1 = Button(bg_img,command=self.open_img,text="Datasets",cursor="hand2",font=("times new roman",15,"bold"),bg="white",fg="navyblue")
         pho_b1_1.place(x=540,y=520,width=180,height=45)
 
-        # Developers   button 7
+        # TimeTables   button 7
         dev_img_btn=Image.open(r"Images_GUI\dev.jpg")
         dev_img_btn=dev_img_btn.resize((180,180),Image.LANCZOS)
         self.dev_img1=ImageTk.PhotoImage(dev_img_btn)
@@ -165,11 +174,11 @@ class Face_Recognition_System:
     
     def developr(self):
         self.new_window=Toplevel(self.root)
-        self.app=Developer(self.new_window)
+        self.app=TimeTable(self.new_window)
     
-    def helpSupport(self):
+    def HelpFaq(self):
         self.new_window=Toplevel(self.root)
-        self.app=Helpsupport(self.new_window)
+        self.app=HelpFaq(self.new_window)
 
     def Close(self):
         self.root.destroy()

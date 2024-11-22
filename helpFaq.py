@@ -3,11 +3,18 @@ from tkinter import ttk
 import importlib
 from PIL import Image, ImageTk
 
-class Helpsupport:
+class HelpFaq:
     def __init__(self, root):
         self.root = root
         self.root.geometry("1536x768+0+0")
-        self.root.title("Face_Recognition_System")
+        self.root.title("QuickAttend")
+        
+        img = Image.open("Images_GUI/scan2.jpg")  # Load the .png icon
+        img = img.resize((200, 200), Image.LANCZOS)  # Resize to 128x128
+        icon = ImageTk.PhotoImage(img)
+
+        # Set the resized icon
+        self.root.iconphoto(False, icon)
 
         # Header image
         img = Image.open(r"Images_GUI\main3.jpg")
@@ -361,5 +368,5 @@ class Helpsupport:
 
 if __name__ == "__main__":
     root = Tk()
-    obj = Helpsupport(root)
+    obj = HelpFaq(root)
     root.mainloop()

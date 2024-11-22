@@ -10,16 +10,23 @@ from student import Student
 from train import Train
 
 from attendance import Attendance
-from timeTable import timeTable
-from helpsupport import Helpsupport
+from timeTable import TimeTable
+from helpFaq import HelpFaq
 import os
 
 
 class Login:
     def __init__(self,root):
         self.root=root
-        self.root.title("Login")
+        self.root.title("QuickAttend")
         self.root.geometry("1536x768+0+0")
+        
+        img = Image.open("Images_GUI/scan2.jpg")  # Load the .png icon
+        img = img.resize((200, 200), Image.LANCZOS)  # Resize to 128x128
+        icon = ImageTk.PhotoImage(img)
+
+        # Set the resized icon
+        self.root.iconphoto(False, icon)
 
         # variables 
         self.var_ssq=StringVar()

@@ -9,11 +9,18 @@ from face_recognition import Face_Recognition
 from attendance import Attendance
 import os
 
-class Developer:
+class TimeTable:
     def __init__(self,root):
         self.root=root
         self.root.geometry("1566x864+0+0")
-        self.root.title("Face_Recogonition_System")
+        self.root.title("QuickAttend")
+        
+        img = Image.open("Images_GUI/scan2.jpg")  # Load the .png icon
+        img = img.resize((200, 200), Image.LANCZOS)  # Resize to 128x128
+        icon = ImageTk.PhotoImage(img)
+
+        # Set the resized icon
+        self.root.iconphoto(False, icon)
 
 # This part is image labels setting start 
         # first header image  
@@ -58,5 +65,5 @@ class Developer:
 
 if __name__ == "__main__":
     root=Tk()
-    obj=Developer(root)
+    obj=TimeTable(root)
     root.mainloop()
