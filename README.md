@@ -1,7 +1,7 @@
 # Face Recognition-Based Attendance System
 
 <div align="center">
-  <img src="Images_GUI/Main Img.png" alt="Project Banner" width="80%" />
+  <img src="Images_GUI/Main Img.png" alt="Project Banner" width=300px height=300px />
 </div>
 
 ## 🌟 About the Project
