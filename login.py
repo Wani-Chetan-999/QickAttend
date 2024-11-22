@@ -10,7 +10,7 @@ from student import Student
 from train import Train
 
 from attendance import Attendance
-from developer import Developer
+from timeTable import timeTable
 from helpsupport import Helpsupport
 import os
 
@@ -217,7 +217,7 @@ class Login:
                 #entry2 
                 self.txtpwd=ttk.Entry(self.root2,textvariable=self.var_sa,font=("times new roman",15,"bold"))
                 self.txtpwd.place(x=70,y=180,width=270)
-
+ 
                 #label2 
                 new_pwd =lb1= Label(self.root2,text="New Password:",font=("times new roman",15,"bold"),fg="#002B53",bg="#F2F2F2")
                 new_pwd.place(x=70,y=220)
@@ -345,7 +345,7 @@ class Login:
 #         pho_b1_1 = Button(bg_img,command=self.open_img,text="QR-Codes",cursor="hand2",font=("tahoma",15,"bold"),bg="white",fg="navyblue")
 #         pho_b1_1.place(x=480,y=510,width=180,height=45)
 
-#         # Developers   button 7
+#         # timeTables   button 7
 #         dev_img_btn=Image.open(r"Images_GUI\dev.jpg")
 #         dev_img_btn=dev_img_btn.resize((180,180),Image.LANCZOS)
 #         self.dev_img1=ImageTk.PhotoImage(dev_img_btn)
@@ -353,7 +353,7 @@ class Login:
 #         dev_b1 = Button(bg_img,command=self.developr,image=self.dev_img1,cursor="hand2",)
 #         dev_b1.place(x=710,y=330,width=180,height=180)
 
-#         dev_b1_1 = Button(bg_img,command=self.developr,text="Developers",cursor="hand2",font=("tahoma",15,"bold"),bg="white",fg="navyblue")
+#         dev_b1_1 = Button(bg_img,command=self.developr,text="timeTables",cursor="hand2",font=("tahoma",15,"bold"),bg="white",fg="navyblue")
 #         dev_b1_1.place(x=710,y=510,width=180,height=45)
 
 #         # exit   button 8
@@ -389,7 +389,7 @@ class Login:
     
 #     def developr(self):
 #         self.new_window=Toplevel(self.root)
-#         self.app=Developer(self.new_window)
+#         self.app=timeTable(self.new_window)
     
 #     def open_img(self):
 #         os.startfile("dataset")
