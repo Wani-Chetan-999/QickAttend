@@ -1,7 +1,7 @@
 # Face Recognition-Based Attendance System
 
 <div align="center">
-  <img src="https://via.placeholder.com/600x200.png?text=Face+Recognition+Attendance+System" alt="Project Banner" width="80%" />
+  <img src="Images_GUI/Main Img.png" alt="Project Banner" width="80%" />
 </div>
 
 ## 🌟 About the Project
@@ -112,7 +112,3 @@ For any inquiries or support, feel free to reach out:
 <div align="center"> 
   <h4>⭐ Don't forget to star this repository if you found it useful! ⭐</h4> 
 </div>
-
-  
-
-   
