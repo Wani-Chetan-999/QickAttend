@@ -54,6 +54,22 @@ The **Face Recognition-Based Attendance System** is a Python-based project desig
 
 ---
 
+## Screenshots
+
+Here are some screenshots of the system in action:
+
+- Login Screen (Centered)
+<div align="center">
+  <img src="images/login_screen.png" alt="Login Screen" width="500" />
+</div>
+
+- Attendance Screen (Left Aligned)
+<img src="images/attendance_screen.png" alt="Attendance Screen" width="500" align="ceter"/>
+
+- System in Action (Right Aligned)
+<img src="images/system_in_action.png" alt="System in Action" width="500" align="center"/>
+---
+
 ### 📝 Usage
 
 1. **Admin uploads user photos** to register faces in the system.
