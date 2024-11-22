@@ -24,7 +24,7 @@ class TimeTable:
 
 # This part is image labels setting start 
         # first header image  
-        img=Image.open(r"Images_GUI\main3.jpg")
+        img=Image.open(r"Images_GUI\bg3.jpg")
         img=img.resize((1536,130),Image.LANCZOS)
         self.photoimg=ImageTk.PhotoImage(img)
 

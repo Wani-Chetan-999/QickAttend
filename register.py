@@ -28,7 +28,7 @@ class Register:
         self.var_cpwd=StringVar()
         self.var_check=IntVar()
 
-        bg1=Image.open(r"Images_GUI\mainbg1.jpeg")
+        bg1=Image.open(r"Images_GUI\mainWind.jpeg")
         bg1=bg1.resize((1566,768),Image.LANCZOS)
         self.photobg1=ImageTk.PhotoImage(bg1)
         

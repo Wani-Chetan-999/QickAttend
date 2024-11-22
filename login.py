@@ -33,7 +33,7 @@ class Login:
         self.var_sa=StringVar()
         self.var_pwd=StringVar()
 
-        bg1=Image.open(r"Images_GUI\mainbg1.jpeg")
+        bg1=Image.open(r"Images_GUI\mainWind.jpeg")
         bg1=bg1.resize((1566,768),Image.LANCZOS)
         self.photobg1=ImageTk.PhotoImage(bg1)
         
@@ -59,6 +59,7 @@ class Login:
         username.place(x=30, y=160)
 
         # Username Entry
+       
         self.txtuser = ttk.Entry(frame1, font=("times new roman", 15, "bold"))
         self.txtuser.place(x=33, y=190, width=270)
 

@@ -26,7 +26,7 @@ class Face_Recognition:
 
         # This part is image labels setting start 
         # first header image  
-        img=Image.open(r"Images_GUI\main3.jpg")
+        img=Image.open(r"Images_GUI\bg3.jpg")
         img=img.resize((1536,864),Image.LANCZOS)
         self.photoimg=ImageTk.PhotoImage(img)
 
@@ -35,7 +35,7 @@ class Face_Recognition:
         f_lb1.place(x=0,y=0,width=1536,height=90)
 
         # backgorund image 
-        bg1=Image.open(r"Images_GUI\bg3.jpg")
+        bg1=Image.open(r"Images_GUI\mainbg2.jpeg")
         bg1=bg1.resize((1536,768),Image.LANCZOS)
         self.photobg1=ImageTk.PhotoImage(bg1)
 
@@ -95,7 +95,7 @@ class Face_Recognition:
             coord=[]
             
             for (x,y,w,h) in featuers:
-                cv2.rectangle(img,(x,y),(x+w,y+h),(0,255,0),3)
+                cv2.rectangle(img,(x,y),(x+w,y+h),(225,0,0),3)
                 id,predict=clf.predict(gray_image[y:y+h,x:x+w])
 
                 confidence=int((100*(1-predict/300)))
@@ -115,11 +115,17 @@ class Face_Recognition:
                 i=cursor.fetchone()
                 i="+".join(i)
 
+              
+                text_color_1 = (255, 255, 0)    # Yellow color for the first line (Student-ID)
+
 
                 if confidence > 77:
-                    cv2.putText(img,f"Student_ID:{i}",(x,y-80),cv2.FONT_HERSHEY_COMPLEX,0.8,(64,15,223),2)
-                    cv2.putText(img,f"Name:{n}",(x,y-55),cv2.FONT_HERSHEY_COMPLEX,0.8,(64,15,223),2)
-                    cv2.putText(img,f"Roll-No:{r}",(x,y-30),cv2.FONT_HERSHEY_COMPLEX,0.8,(64,15,223),2)
+                    cv2.putText(img, f"Student-ID: {i}", (x + 10, y - 60), cv2.FONT_HERSHEY_COMPLEX, 0.8, text_color_1, 2)
+                    
+                    
+                    cv2.putText(img, f"Name: {n}", (x + 10, y - 35), cv2.FONT_HERSHEY_COMPLEX, 0.8, text_color_1, 2)
+                    
+                    cv2.putText(img, f"Roll-No: {r}", (x + 10, y - 10), cv2.FONT_HERSHEY_COMPLEX, 0.8, text_color_1, 2)
                     self.mark_attendance(i,r,n)
                 else:
                     cv2.rectangle(img,(x,y),(x+w,y+h),(0,0,255),3)

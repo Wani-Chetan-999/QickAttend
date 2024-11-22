@@ -54,7 +54,7 @@ class Student:
         f_lb1.place(x=0,y=0,width=1536,height=90)
 
         # backgorund image 
-        bg1=Image.open(r"Images_GUI\main3.jpg")
+        bg1=Image.open(r"Images_GUI\mainbg2.jpeg")
         bg1=bg1.resize((1566,768),Image.LANCZOS)
         self.photobg1=ImageTk.PhotoImage(bg1)
 
@@ -85,7 +85,7 @@ class Student:
 
         #combo box 
         dep_combo=ttk.Combobox(current_course_frame,textvariable=self.var_dep,width=15,font=("verdana",12,"bold"),state="readonly")
-        dep_combo["values"]=("Select Department","BSCS","BSIT","BSENG","BSPHY","BSMATH")
+        dep_combo["values"]=("Select Department","CS","IT","MECH","ENTC","EE","AIDS")
         dep_combo.current(0)
         dep_combo.grid(row=0,column=1,padx=5,pady=15,sticky=W)
 
@@ -109,7 +109,7 @@ class Student:
 
         #combo box 
         year_combo=ttk.Combobox(current_course_frame,textvariable=self.var_year,width=15,font=("verdana",12,"bold"),state="readonly")
-        year_combo["values"]=("Select Year","2017-21","2018-22","2019-23","2020-24","2021-25")
+        year_combo["values"]=("Select Year","2020-24","2021-25","2022-26","2023-27","2024-28")
         year_combo.current(0)
         year_combo.grid(row=1,column=1,padx=5,pady=15,sticky=W)
 

@@ -37,7 +37,7 @@ class Face_Recognition_System:
         f_lb1.place(x=0,y=0,width=1536,height=90)
 
         # backgorund image 
-        bg1=Image.open(r"Images_GUI\main3.jpg")
+        bg1=Image.open(r"Images_GUI\mainbg2.jpeg")
         bg1=bg1.resize((1566,768),Image.LANCZOS)
         self.photobg1=ImageTk.PhotoImage(bg1)
 

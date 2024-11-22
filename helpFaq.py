@@ -17,7 +17,7 @@ class HelpFaq:
         self.root.iconphoto(False, icon)
 
         # Header image
-        img = Image.open(r"Images_GUI\main3.jpg")
+        img=Image.open(r"Images_GUI\bg3.jpg")
         img = img.resize((1536, 90), Image.LANCZOS)
         self.photoimg = ImageTk.PhotoImage(img)
 
@@ -25,7 +25,7 @@ class HelpFaq:
         f_lb1.place(x=0, y=0, width=1536, height=130)
 
         # Background image
-        bg1 = Image.open(r"Images_GUI\bg3.jpg")
+        bg1=Image.open(r"Images_GUI\mainbg2.jpeg")
         bg1 = bg1.resize((1536, 768), Image.LANCZOS)
         self.photobg1 = ImageTk.PhotoImage(bg1)
 
