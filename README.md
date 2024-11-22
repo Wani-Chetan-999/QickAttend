@@ -90,7 +90,7 @@ Here are some screenshots of the system in action:
 
 - **Attedance Module**
 <div align="center">
-  <img src="Screenshots/.png" alt="Login Screen" width="80%"  />
+  <img src="Screenshots/attendance.png" alt="Login Screen" width="80%"  />
 </div>
 
 ### 📝 Usage
