@@ -83,7 +83,7 @@ Here are some screenshots of the system in action:
   <img src="Screenshots/dataTrain.png" alt="Login Screen" width="80%"  />
 </div>
 
-- **Face Detect & MArk Attendance**
+- **Face Detect & Mark Attendance**
 <div align="center">
   <img src="Screenshots/result.png" alt="Login Screen" width="80%"  />
 </div>
