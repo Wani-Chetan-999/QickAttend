@@ -1,4 +1,6 @@
 Requirements Install Project 
+
+# Software
 -----------------------------
 1. VS Code
 2. Python 3.8.5 64bit 
@@ -6,3 +8,15 @@ Requirements Install Project
 -----------------------------
 Install Libaries as Mention in Files of Project 
 ------------------------------------------------
+# Python libraries
+
+# Python standard libraries - no need to install via pip:
+# tkinter, datetime
+
+# Third-party libraries:
+Pillow==9.4.0            # For image handling
+numpy==1.23.5            # For numerical operations
+opencv-python==4.7.0.72  # For working with computer vision
+mysql-connector-python==8.0.33  # For MySQL database connection
+face_recognition==1.3.0  # For face recognition
+
